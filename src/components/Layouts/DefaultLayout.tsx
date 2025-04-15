@@ -1,21 +1,12 @@
 import { PropsWithChildren, Suspense, useEffect, useState } from "react";
 import App from "@/App";
 import { IRootState } from "../../store";
-import { toggleSidebar } from "../../store/themeConfigSlice";
 import Footer from "./Footer";
 import AppHeader from "./AppHeader";
 import Setting from "./Setting";
 import AppSidebar from "./AppSidebar";
 import Portals from "../Portals";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 import {
   SidebarInset,
   SidebarProvider,
